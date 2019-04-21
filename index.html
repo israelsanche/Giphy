@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CDN below -->
+    <link rel="icon" type="image/ico" href="http://www.iconarchive.com/download/i75988/martz90/circle-addon1/new-york-times.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+    <title>Giphy Search</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <!-- Content here -->
+        <div class="jumbotron">
+            <h1 style="text-align: center" class="display-3">What the Giphy!!</h1>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- serach boxes -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="far fa-compass"></i> Search Parameters
+                    </div>
+                    <div class="card-body">
+                        <!-- search input -->
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupInput1">Search Term:</label>
+                                <input type="text" class="form-control" id="formGroupInput1"
+                                    placeholder="example input">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupSelect">Number of Records to Retreive</label>
+                                <select class="form-control" id="formGroupSelect">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupInput2">Start Date (Optional):</label>
+                                <input type="text" class="form-control" id="formGroupInput2"
+                                    placeholder="20190101 (January 1st, 2019)">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupInput3">End Date (Optional):</label>
+                                <input type="text" class="form-control" id="formGroupInput3"
+                                    placeholder="20191030 (October 30th, 2019)">
+
+                            </div>
+                            
+                                <span class="lead" class="col-md-4">
+                                    <a class="btn btn-sm" href="#!" role="button" id="search_button"><i class="fas fa-search"></i>
+                                        Search</a>
+                                </span>
+                                <span class="lead" class="col-md-4 clear">
+                                    <a class="btn btn-sm" href="#!" role="button" id="clear_button"><i class="fas fa-trash-alt"></i>
+                                        Clear</a>
+                                </span>
+                            
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <!-- Content -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="far fa-newspaper"></i> Top articless
+                    </div>
+                    <div class="card-body" id="result_card">
+                        This is some text within a card block.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+      
+        <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4">
+            <audio controls  >
+            <source src="assets/Spiderman.mp3" type="audio/ogg">
+            <source src="assets/Spiderman.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>        
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">Made with lots and lots of <i class="fas fa-heart"></i>
+                <a href="https://github.com/tklarrabee/GroupRepo/tree/master/assets/css"> Group Repo</a>
+            </div>
+            <!-- Copyright -->
+
+          
+        </footer>
+        <!-- Footer -->
+    </div>
+
+
+    </div>
+
+</body>
+
+<script src="assets/js/app.js"></script>
+
+</html>
