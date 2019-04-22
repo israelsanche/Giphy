@@ -12,7 +12,6 @@ $(document).ready(function () {
         var animal = "";
         animal = "cat";
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
-
         $.ajax({
             url: queryURL,
             method: "GET"
@@ -21,7 +20,7 @@ $(document).ready(function () {
             console.log(response.data.length);
             // this logs the entire response
             console.log(response);
-            //   this finally logged the path to the looping giv i wanted. 1 is the index. for loop to go through all
+            //   this finally logged the path to the looping gif i wanted. 1 is the index. for loop to go through all
             console.log(response.data[1].images.fixed_width.url);
         // now to set the images
         $("#image1").attr("src", response.data[0].images.fixed_width.url);
@@ -34,7 +33,17 @@ $(document).ready(function () {
         $("#image8").attr("src", response.data[7].images.fixed_width.url);
         $("#image9").attr("src", response.data[8].images.fixed_width.url);
         $("#image10").attr("src", response.data[9].images.fixed_width.url);
-        
+        // this will set the rating
+        $("#image1text").text("Rated: " + response.data[0].rating);
+        $("#image2text").text("Rated: " + response.data[1].rating);
+        $("#image3text").text("Rated: " + response.data[2].rating);
+        $("#image4text").text("Rated: " + response.data[3].rating);
+        $("#image5text").text("Rated: " + response.data[4].rating);
+        $("#image6text").text("Rated: " + response.data[5].rating);
+        $("#image7text").text("Rated: " + response.data[6].rating);
+        $("#image8text").text("Rated: " + response.data[7].rating);
+        $("#image9text").text("Rated: " + response.data[8].rating);
+        $("#image10text").text("Rated: " + response.data[9].rating);
         });
     }
 
@@ -65,7 +74,16 @@ $(document).ready(function () {
         $("#image8").attr("src", response.data[7].images.fixed_width.url);
         $("#image9").attr("src", response.data[8].images.fixed_width.url);
         $("#image10").attr("src", response.data[9].images.fixed_width.url);
-        
+        $("#image1text").text("Rated: " + response.data[0].rating);
+        $("#image2text").text("Rated: " + response.data[1].rating);
+        $("#image3text").text("Rated: " + response.data[2].rating);
+        $("#image4text").text("Rated: " + response.data[3].rating);
+        $("#image5text").text("Rated: " + response.data[4].rating);
+        $("#image6text").text("Rated: " + response.data[5].rating);
+        $("#image7text").text("Rated: " + response.data[6].rating);
+        $("#image8text").text("Rated: " + response.data[7].rating);
+        $("#image9text").text("Rated: " + response.data[8].rating);
+        $("#image10text").text("Rated: " + response.data[9].rating);
         });
     }
 
@@ -97,7 +115,16 @@ $(document).ready(function () {
         $("#image8").attr("src", response.data[7].images.fixed_width.url);
         $("#image9").attr("src", response.data[8].images.fixed_width.url);
         $("#image10").attr("src", response.data[9].images.fixed_width.url);
-        
+        $("#image1text").text("Rated: " + response.data[0].rating);
+        $("#image2text").text("Rated: " + response.data[1].rating);
+        $("#image3text").text("Rated: " + response.data[2].rating);
+        $("#image4text").text("Rated: " + response.data[3].rating);
+        $("#image5text").text("Rated: " + response.data[4].rating);
+        $("#image6text").text("Rated: " + response.data[5].rating);
+        $("#image7text").text("Rated: " + response.data[6].rating);
+        $("#image8text").text("Rated: " + response.data[7].rating);
+        $("#image9text").text("Rated: " + response.data[8].rating);
+        $("#image10text").text("Rated: " + response.data[9].rating);
         });
     }
 
@@ -128,7 +155,16 @@ $(document).ready(function () {
         $("#image8").attr("src", response.data[7].images.fixed_width.url);
         $("#image9").attr("src", response.data[8].images.fixed_width.url);
         $("#image10").attr("src", response.data[9].images.fixed_width.url);
-        
+        $("#image1text").text("Rated: " + response.data[0].rating);
+        $("#image2text").text("Rated: " + response.data[1].rating);
+        $("#image3text").text("Rated: " + response.data[2].rating);
+        $("#image4text").text("Rated: " + response.data[3].rating);
+        $("#image5text").text("Rated: " + response.data[4].rating);
+        $("#image6text").text("Rated: " + response.data[5].rating);
+        $("#image7text").text("Rated: " + response.data[6].rating);
+        $("#image8text").text("Rated: " + response.data[7].rating);
+        $("#image9text").text("Rated: " + response.data[8].rating);
+        $("#image10text").text("Rated: " + response.data[9].rating);
         });
     }
 
@@ -159,7 +195,16 @@ $(document).ready(function () {
         $("#image8").attr("src", response.data[7].images.fixed_width.url);
         $("#image9").attr("src", response.data[8].images.fixed_width.url);
         $("#image10").attr("src", response.data[9].images.fixed_width.url);
-        
+        $("#image1text").text("Rated: " + response.data[0].rating);
+        $("#image2text").text("Rated: " + response.data[1].rating);
+        $("#image3text").text("Rated: " + response.data[2].rating);
+        $("#image4text").text("Rated: " + response.data[3].rating);
+        $("#image5text").text("Rated: " + response.data[4].rating);
+        $("#image6text").text("Rated: " + response.data[5].rating);
+        $("#image7text").text("Rated: " + response.data[6].rating);
+        $("#image8text").text("Rated: " + response.data[7].rating);
+        $("#image9text").text("Rated: " + response.data[8].rating);
+        $("#image10text").text("Rated: " + response.data[9].rating);
         });
     }
 
@@ -190,7 +235,17 @@ $(document).ready(function () {
         $("#image8").attr("src", response.data[7].images.fixed_width.url);
         $("#image9").attr("src", response.data[8].images.fixed_width.url);
         $("#image10").attr("src", response.data[9].images.fixed_width.url);
-        
+        // this will set the rating
+        $("#image1text").text("Rated: " + response.data[0].rating);
+        $("#image2text").text("Rated: " + response.data[1].rating);
+        $("#image3text").text("Rated: " + response.data[2].rating);
+        $("#image4text").text("Rated: " + response.data[3].rating);
+        $("#image5text").text("Rated: " + response.data[4].rating);
+        $("#image6text").text("Rated: " + response.data[5].rating);
+        $("#image7text").text("Rated: " + response.data[6].rating);
+        $("#image8text").text("Rated: " + response.data[7].rating);
+        $("#image9text").text("Rated: " + response.data[8].rating);
+        $("#image10text").text("Rated: " + response.data[9].rating);
         });
     }
 
