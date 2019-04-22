@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 
     $("#cat").on("click", function () {
-        var animal = "";
+        var animal = "cat";
         animal = "cat";
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
         $.ajax({
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     )
     $("#dog").on("click", function () {
-        var animal = "";
+        var animal = "dog";
         animal = "dog";
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
 
@@ -90,7 +90,7 @@ $(document).ready(function () {
     )
 
     $("#elephant").on("click", function () {
-        var animal = "";
+        var animal = "elephant";
         animal = "elephant";
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
 
@@ -130,7 +130,7 @@ $(document).ready(function () {
 
     )
     $("#mouse").on("click", function () {
-        var animal = "";
+        var animal = "mouse";
         animal = "mouse";
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
 
@@ -170,7 +170,7 @@ $(document).ready(function () {
 
     )
     $("#donkey").on("click", function () {
-        var animal = "";
+        var animal = "donkey";
         animal = "donkey";
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
 
@@ -210,7 +210,7 @@ $(document).ready(function () {
 
     )
     $("#shrek").on("click", function () {
-        var animal = "";
+        var animal = "shrek";
         animal = "shrek";
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
 
