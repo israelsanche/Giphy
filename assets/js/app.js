@@ -2,45 +2,81 @@
 // var themeSong = new Audio("./assets/Spiderman.mp3");
 // themeSong.play();
 
-$(document).ready(function(){
+$(document).ready(function () {
+    // //javascript, jQuery
+    // var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10");
+    // xhr.done(function (data) { console.log("success got data", data) ; });
 
 
-function get_articles(search_term, how_many, start_year, end_year){
+    $("#cat").on("click", function () {
+        var animal = "";
+        animal = "cat";
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
+var image1 = "";
+var image2 = "";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            $("#loading").text("")
+            image1=response.data[0].images.fixed_width.url;
+            console.log(response.data.length);
+            // this logs the entire response
+            console.log(response);
+            //   this finally logged the path to the looping giv i wanted. 1 is the index. for loop to go through all
+            console.log(response.data[1].images.fixed_width.url);
+        // now to set the images
+        $("#image1").attr("src", response.data[0].images.fixed_width.url);
+        $("#image2").attr("src", response.data[1].images.fixed_width.url);
+        $("#image3").attr("src", response.data[2].images.fixed_width.url);
+        $("#image4").attr("src", response.data[3].images.fixed_width.url);
+        $("#image5").attr("src", response.data[4].images.fixed_width.url);
+        $("#image6").attr("src", response.data[5].images.fixed_width.url);
+        $("#image7").attr("src", response.data[6].images.fixed_width.url);
+        $("#image8").attr("src", response.data[7].images.fixed_width.url);
+        $("#image9").attr("src", response.data[8].images.fixed_width.url);
+        $("#image10").attr("src", response.data[9].images.fixed_width.url);
+        console.log(image1);
+        });
+    }
+
+    )
+// var imageurl=response.data[1].iamges.looping.mp4;
+// console.log(imageurl);
 
 
-    
-    $.ajax({
-        url: "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+search_term+"&?end_date="+end_year+"&?begin_date="+start_year+"&api-key=qLYGpSGjKjv43FYGw3Uvv2prfXcCzCU7",
-        method: "GET"
-    }).then(function(searchTerm){
-        // console.log(searchTerm.response.docs);
-        var article_array;
-        article_array = searchTerm.response.docs;
-        // console.log(article_array);
-        
-        for(let i=0;i<how_many;i++){
-            var newdiv = $('<div class="card">');
-            newdiv.addClass("results");
-            newdiv.append('<a href="'+article_array[i].web_url+'"><h3 class="card-title">'+ article_array[i].headline.main + '</h3></a>');
-            newdiv.append('<p class="card-body">' + article_array[i].snippet + '</p>');
-            $("#result_card").append(newdiv);
-        }
-    })
-}
 
-$("#search_button").on("click",function(){
-
-    
-    var searchTerm = $("#formGroupInput1").val();
-    var how_many = $("#formGroupSelect").val();
-    var start_year = $("#formGroupInput2").val();
-    var end_year = $("#formGroupInput3").val();
-    $("#result_card").empty();
-    get_articles(searchTerm,how_many,start_year,end_year);
-
-})
+    // function get_articles() {
 
 
 
-// get_articles();
+    //     $.ajax({
+    //         url: "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10",
+    //         method: "GET"
+    //     }).then(function (searchTerm) {
+    //         console.log(searchTerm.response.docs);
+    //         var article_array;
+    //         article_array = searchTerm.response.docs;
+    //         console.log(article_array);
+    //     })
+    // }
+
+
+
+    // $("#search_button").on("click", function () {
+
+
+    //     var searchTerm = $("#formGroupInput1").val();
+    //     var how_many = $("#formGroupSelect").val();
+    //     var start_year = $("#formGroupInput2").val();
+    //     var end_year = $("#formGroupInput3").val();
+    //     $("#result_card").empty();
+    //     get_articles(searchTerm, how_many, start_year, end_year);
+
+    // })
+
+
+
+    // get_articles();
 });

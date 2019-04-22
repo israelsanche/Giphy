@@ -33,46 +33,31 @@
                 <!-- serach boxes -->
                 <div class="card">
                     <div class="card-header">
-                        <i class="far fa-compass"></i> Search Parameters
+                        <i class="far fa-compass"></i> Search
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" align="center">
                         <!-- search input -->
-                        <form>
-                            <div class="form-group">
-                                <label for="formGroupInput1">Search Term:</label>
-                                <input type="text" class="form-control" id="formGroupInput1"
-                                    placeholder="example input">
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupSelect">Number of Records to Retreive</label>
-                                <select class="form-control" id="formGroupSelect">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupInput2">Start Date (Optional):</label>
-                                <input type="text" class="form-control" id="formGroupInput2"
-                                    placeholder="20190101 (January 1st, 2019)">
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupInput3">End Date (Optional):</label>
-                                <input type="text" class="form-control" id="formGroupInput3"
-                                    placeholder="20191030 (October 30th, 2019)">
+                    
+                                <label for="formGroupInput1">Click for Giphy:</label>
+                                <div>
+                                 <button type="button" id="cat" class="btn btn-light">Cat</button>
+                                 <div>
 
-                            </div>
+                                 </div>
+                            <button type="button" id="dog" class="btn btn-light">Dog</button>
+                            <div></div>
+                            <button type="button" id="elephant" class="btn btn-light">Elephant</button>                                   
+                                </div>
+                                <button type="button" id="mouse" class="btn btn-light">Mouse</button>
+                                <div></div>
+                                <button type="button" id="donkey" class="btn btn-light">Donkey</button>
+                                <div></div>
+                                <button type="button" id="shrek" class="btn btn-light">Shrek</button>
+                                <div></div>
+
+
                             
-                                <span class="lead" class="col-md-4">
-                                    <a class="btn btn-sm" href="#!" role="button" id="search_button"><i class="fas fa-search"></i>
-                                        Search</a>
-                                </span>
-                                <span class="lead" class="col-md-4 clear">
-                                    <a class="btn btn-sm" href="#!" role="button" id="clear_button"><i class="fas fa-trash-alt"></i>
-                                        Clear</a>
-                                </span>
+
                             
                         </form>
 
@@ -83,10 +68,27 @@
                 <!-- Content -->
                 <div class="card">
                     <div class="card-header">
-                        <i class="far fa-newspaper"></i> Top articless
+                        <p> Giphy Results:</p>
                     </div>
                     <div class="card-body" id="result_card">
-                        This is some text within a card block.
+                       <p id="loading">
+                        Giphy's will display here... loading... loading...   
+                       </p> 
+                    </div>
+                    <div>
+                            <img id="image1" src="..." alt="..." class="img-thumbnail">
+                            <img id="image2" src="..." alt="..." class="img-thumbnail">
+                            <img id="image3" src="..." alt="..." class="img-thumbnail">
+                    </div>
+                    <div>
+                            <img id="image4" src="..." alt="..." class="img-thumbnail">
+                            <img id="image5" src="..." alt="..." class="img-thumbnail">
+                            <img id="image6" src="..." alt="..." class="img-thumbnail">
+                    </div>
+                    <div>
+                            <img id="image7" src="..." alt="..." class="img-thumbnail">
+                            <img id="image8" src="..." alt="..." class="img-thumbnail">
+                            <img id="image9" src="..." alt="..." class="img-thumbnail">
                     </div>
                 </div>
 
@@ -95,12 +97,12 @@
 
       
         <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4">
+        <!-- <footer class="page-footer font-small blue pt-4">
             <audio controls  >
             <source src="assets/Spiderman.mp3" type="audio/ogg">
             <source src="assets/Spiderman.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
-          </audio>        
+          </audio>         -->
 
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3">Made with lots and lots of <i class="fas fa-heart"></i>
