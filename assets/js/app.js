@@ -12,15 +12,12 @@ $(document).ready(function () {
         var animal = "";
         animal = "cat";
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
-var image1 = "";
-var image2 = "";
 
         $.ajax({
             url: queryURL,
             method: "GET"
         }).then(function (response) {
             $("#loading").text("")
-            image1=response.data[0].images.fixed_width.url;
             console.log(response.data.length);
             // this logs the entire response
             console.log(response);
@@ -37,11 +34,168 @@ var image2 = "";
         $("#image8").attr("src", response.data[7].images.fixed_width.url);
         $("#image9").attr("src", response.data[8].images.fixed_width.url);
         $("#image10").attr("src", response.data[9].images.fixed_width.url);
-        console.log(image1);
+        
         });
     }
 
     )
+    $("#dog").on("click", function () {
+        var animal = "";
+        animal = "dog";
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            $("#loading").text("")
+            console.log(response.data.length);
+            // this logs the entire response
+            console.log(response);
+            //   this finally logged the path to the looping giv i wanted. 1 is the index. for loop to go through all
+            console.log(response.data[1].images.fixed_width.url);
+        // now to set the images
+        $("#image1").attr("src", response.data[0].images.fixed_width.url);
+        $("#image2").attr("src", response.data[1].images.fixed_width.url);
+        $("#image3").attr("src", response.data[2].images.fixed_width.url);
+        $("#image4").attr("src", response.data[3].images.fixed_width.url);
+        $("#image5").attr("src", response.data[4].images.fixed_width.url);
+        $("#image6").attr("src", response.data[5].images.fixed_width.url);
+        $("#image7").attr("src", response.data[6].images.fixed_width.url);
+        $("#image8").attr("src", response.data[7].images.fixed_width.url);
+        $("#image9").attr("src", response.data[8].images.fixed_width.url);
+        $("#image10").attr("src", response.data[9].images.fixed_width.url);
+        
+        });
+    }
+
+    )
+
+    $("#elephant").on("click", function () {
+        var animal = "";
+        animal = "elephant";
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            $("#loading").text("")
+            console.log(response.data.length);
+            // this logs the entire response
+            console.log(response);
+            //   this finally logged the path to the looping giv i wanted. 1 is the index. for loop to go through all
+            console.log(response.data[1].images.fixed_width.url);
+        // now to set the images
+        $("#image1").attr("src", response.data[0].images.fixed_width.url);
+        $("#image2").attr("src", response.data[1].images.fixed_width.url);
+        $("#image3").attr("src", response.data[2].images.fixed_width.url);
+        $("#image4").attr("src", response.data[3].images.fixed_width.url);
+        $("#image5").attr("src", response.data[4].images.fixed_width.url);
+        $("#image6").attr("src", response.data[5].images.fixed_width.url);
+        $("#image7").attr("src", response.data[6].images.fixed_width.url);
+        $("#image8").attr("src", response.data[7].images.fixed_width.url);
+        $("#image9").attr("src", response.data[8].images.fixed_width.url);
+        $("#image10").attr("src", response.data[9].images.fixed_width.url);
+        
+        });
+    }
+
+    )
+    $("#mouse").on("click", function () {
+        var animal = "";
+        animal = "mouse";
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            $("#loading").text("")
+            console.log(response.data.length);
+            // this logs the entire response
+            console.log(response);
+            //   this finally logged the path to the looping giv i wanted. 1 is the index. for loop to go through all
+            console.log(response.data[1].images.fixed_width.url);
+        // now to set the images
+        $("#image1").attr("src", response.data[0].images.fixed_width.url);
+        $("#image2").attr("src", response.data[1].images.fixed_width.url);
+        $("#image3").attr("src", response.data[2].images.fixed_width.url);
+        $("#image4").attr("src", response.data[3].images.fixed_width.url);
+        $("#image5").attr("src", response.data[4].images.fixed_width.url);
+        $("#image6").attr("src", response.data[5].images.fixed_width.url);
+        $("#image7").attr("src", response.data[6].images.fixed_width.url);
+        $("#image8").attr("src", response.data[7].images.fixed_width.url);
+        $("#image9").attr("src", response.data[8].images.fixed_width.url);
+        $("#image10").attr("src", response.data[9].images.fixed_width.url);
+        
+        });
+    }
+
+    )
+    $("#donkey").on("click", function () {
+        var animal = "";
+        animal = "donkey";
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            $("#loading").text("")
+            console.log(response.data.length);
+            // this logs the entire response
+            console.log(response);
+            //   this finally logged the path to the looping giv i wanted. 1 is the index. for loop to go through all
+            console.log(response.data[1].images.fixed_width.url);
+        // now to set the images
+        $("#image1").attr("src", response.data[0].images.fixed_width.url);
+        $("#image2").attr("src", response.data[1].images.fixed_width.url);
+        $("#image3").attr("src", response.data[2].images.fixed_width.url);
+        $("#image4").attr("src", response.data[3].images.fixed_width.url);
+        $("#image5").attr("src", response.data[4].images.fixed_width.url);
+        $("#image6").attr("src", response.data[5].images.fixed_width.url);
+        $("#image7").attr("src", response.data[6].images.fixed_width.url);
+        $("#image8").attr("src", response.data[7].images.fixed_width.url);
+        $("#image9").attr("src", response.data[8].images.fixed_width.url);
+        $("#image10").attr("src", response.data[9].images.fixed_width.url);
+        
+        });
+    }
+
+    )
+    $("#shrek").on("click", function () {
+        var animal = "";
+        animal = "shrek";
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=j5IKEPJUsALR0XDKDbeEAn878hdXU45E&limit=10";
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            $("#loading").text("")
+            console.log(response.data.length);
+            // this logs the entire response
+            console.log(response);
+            //   this finally logged the path to the looping giv i wanted. 1 is the index. for loop to go through all
+            console.log(response.data[1].images.fixed_width.url);
+        // now to set the images
+        $("#image1").attr("src", response.data[0].images.fixed_width.url);
+        $("#image2").attr("src", response.data[1].images.fixed_width.url);
+        $("#image3").attr("src", response.data[2].images.fixed_width.url);
+        $("#image4").attr("src", response.data[3].images.fixed_width.url);
+        $("#image5").attr("src", response.data[4].images.fixed_width.url);
+        $("#image6").attr("src", response.data[5].images.fixed_width.url);
+        $("#image7").attr("src", response.data[6].images.fixed_width.url);
+        $("#image8").attr("src", response.data[7].images.fixed_width.url);
+        $("#image9").attr("src", response.data[8].images.fixed_width.url);
+        $("#image10").attr("src", response.data[9].images.fixed_width.url);
+        
+        });
+    }
+
+    )
+
 // var imageurl=response.data[1].iamges.looping.mp4;
 // console.log(imageurl);
 
